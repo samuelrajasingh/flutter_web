@@ -21,9 +21,6 @@ jobs:
       - run: flutter test
       - run: flutter build web --release
       - run: |
-          # type configurations: your user.email and user.name followed lines 
-          git config --global user.email rajasinghsamuelb@karunya.edu.in 
-          git config --global user.name Raja singh Samuel 
           git status
           git remote add origin https://${{secrets.commit_secret}}@github.com/samuelrajasingh/flutter_web.git
           git checkout -b gh-pages
