@@ -23,7 +23,8 @@ jobs:
       - run: |
           #git add .
           #git commit -m "workflow Done"
-          #git remote add origin https://${{secrets.commit_secret}}@github.com/samuelrajasingh/flutter_web.git
+          git remote remove origin
+          git remote add origin https://${{secrets.commit_secret}}@github.com/samuelrajasingh/flutter_web.git
           git checkout -b gh-pages
           git config user.name Rajasingh Samuel
           git config user.email rajasinghsamuelb@karunya.edu.in
