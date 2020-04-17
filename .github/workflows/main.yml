@@ -21,8 +21,9 @@ jobs:
       - run: flutter test
       - run: flutter build web --release
       - run: |
-          git status
-          git remote add origin https://${{secrets.commit_secret}}@github.com/samuelrajasingh/flutter_web.git
+          #git add .
+          #git commit -m "workflow Done"
+          #git remote add origin https://${{secrets.commit_secret}}@github.com/samuelrajasingh/flutter_web.git
           git checkout -b gh-pages
           git add --all
           git commit -m "update"
