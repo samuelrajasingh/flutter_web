@@ -21,7 +21,6 @@ jobs:
       - run: flutter test
       - run: flutter build web --release
       - run: |
-          git init
           # type configurations: your user.email and user.name followed lines 
           git config --global user.email rajasinghsamuelb@karunya.edu.in 
           git config --global user.name Raja singh Samuel 
